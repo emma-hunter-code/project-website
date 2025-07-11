@@ -1,6 +1,8 @@
 :root {
   --header-font-family: "Playfair Display", serif;
   --subheader-font-family: "Poppins", sans-serif;
+  --body-text-color: color black;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -26,6 +28,7 @@ h2 {
   font-weight: 100;
   font-style: normal;
   margin-left: 5px; /*to bring text in line with the main part of the E*/
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -34,10 +37,12 @@ h3 {
   font-size: 18px;
 }
 
-/*About me page*/
+/*HOMEPAGE*/
+
+/*ABOUT ME PAGE*/
 
 .grid {
-  /*Layout for bio sections*/
+  /*Layout for bio sections - also used for project descriptions*/
   margin-top: 20px;
   max-width: 60%;
 }
@@ -49,9 +54,22 @@ h3 {
 }
 
 .about-paragraph {
-  /*Paragraph for each bio section*/
+  /*Paragraph for each bio section - also used for project descriptions*/
   font-family: var(--subheader-font-family);
   font-weight: 300;
+}
+
+/*PROJECTS PAGE*/
+
+.project-image {
+  box-shadow: var(--box-shadow);
+  max-width: 400px !important;
+  padding: 2px !important;
+  margin: 20px 20px 20px 0 !important;
+}
+
+.launch {
+  font-weight: normal;
 }
 
 /*Contact details on contacts page*/
@@ -73,4 +91,15 @@ h3 {
 .contact-me:hover {
   /*This is to highlight when the email address is hovered on*/
   text-decoration: underline;
+}
+
+/* Formatting for signature */
+
+.signature p {
+  font-size: 12px;
+  color: var(--body-text-color);
+  opacity: 0.6;
+  font-family: monospace;
+  text-align: left;
+  padding-top: 50px;
 }
