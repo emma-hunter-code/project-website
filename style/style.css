@@ -4,8 +4,7 @@
 }
 
 body {
-  margin-left: 30px;
-  margin-top: 55px;
+  margin: 80px 30px;
 }
 
 h1 {
@@ -17,9 +16,61 @@ h1 {
   line-height: 1;
 }
 
-h2 {
+h2,
+h3,
+p {
   font-family: var(--subheader-font-family);
+}
+
+h2 {
   font-weight: 100;
   font-style: normal;
   margin-left: 5px; /*to bring text in line with the main part of the E*/
+}
+
+h3 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+}
+
+/*About me page*/
+
+.grid {
+  /*Layout for bio sections*/
+  margin-top: 20px;
+  max-width: 60%;
+}
+
+.about-subheader {
+  /*Header for each bio section*/
+  font-family: var(--subheader-font-family);
+  font-weight: bold;
+}
+
+.about-paragraph {
+  /*Paragraph for each bio section*/
+  font-family: var(--subheader-font-family);
+  font-weight: 300;
+}
+
+/*Contact details on contacts page*/
+
+.contact-details {
+  /*This div holds both the icon and the email address and places the items on the page*/
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.contact-me {
+  /*This is the email address*/
+  font-family: var(--subheader-font-family);
+  color: black;
+  text-decoration: none;
+  padding-left: 7px; /*Adding a little space between the icon and the text*/
+}
+
+.contact-me:hover {
+  /*This is to highlight when the email address is hovered on*/
+  text-decoration: underline;
 }
