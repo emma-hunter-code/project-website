@@ -5,10 +5,6 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-body {
-  margin: 90px 40px;
-}
-
 .page-container {
   /* Trying to figure out footer but it's not working! */
   position: relative;
@@ -17,7 +13,14 @@ body {
 
 .content-wrap {
   /* Footer height */
+  margin: auto 80px;
   padding-bottom: 100px;
+}
+
+.hero {
+  background-color: rgba(250, 221, 152, 0.2);
+  padding: 100px 40px 60px 40px;
+  margin-bottom: 60px;
 }
 
 /* Font families */
@@ -46,29 +49,23 @@ h1 {
 h2 {
   font-weight: 100;
   font-style: normal;
-  margin-bottom: 50px;
 }
 
 h3 {
   font-family: var(--header-font-family);
   font-weight: bold;
   font-style: normal;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 p {
   opacity: 0.7;
+  font-size: 16px;
 }
 
 /*HOMEPAGE*/
 
 /*ABOUT ME PAGE*/
-
-.grid {
-  /*Layout for bio sections - also used for project descriptions*/
-  margin-top: 20px;
-  max-width: 80%;
-}
 
 .about-subheader {
   /*Header for each bio section*/
@@ -82,9 +79,8 @@ p {
   font-weight: 300;
 }
 
-.about-paragraph p {
-  /*Relate to p for project descriptions only*/
-  margin: 20px 0;
+img {
+  max-height: 500px;
 }
 
 /*PROJECTS PAGE*/
@@ -94,10 +90,23 @@ p {
   margin-top: 120px;
 }
 
+.ptc-left {
+  /*Placeemnt of project details on left side*/
+  text-align: start;
+  margin: 0;
+}
+
+.project-paragraph {
+  /*Paragraph for each bio section - also used for project descriptions*/
+  font-family: var(--subheader-font-family);
+  font-weight: 300;
+}
+
 .project-image {
   box-shadow: var(--box-shadow);
-  padding: 80px 80px !important;
-  margin: 20px 20px 20px 0 !important;
+  padding: 5px !important;
+  max-width: 500px;
+  margin-bottom: 20px !important;
 }
 
 .launch {
@@ -106,18 +115,11 @@ p {
 
 /*Contact details on contacts page*/
 
-.contact-details {
-  /*This div holds both the icon and the email address and places the items on the page*/
-  margin-left: 10px;
-  margin-top: 15px;
-}
-
 .contact-me {
   /*This is the email address*/
   font-family: var(--subheader-font-family);
   color: black;
   text-decoration: none;
-  padding-left: 7px; /*Adding a little space between the icon and the text*/
 }
 
 .contact-me:hover {

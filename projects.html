@@ -81,120 +81,146 @@
       </div>
     </nav>
     <div class="page-container">
-      <div class="content-wrap">
-        <!-- HEADER TEXT -->
+      <!-- HEADER TEXT -->
+      <div class="hero">
         <h1 class="text-danger">Projects</h1>
         <h2 class="text-primary">
           Exploring, building, and learning by doing.
         </h2>
+      </div>
 
-        <!-- PROJECT GRID - 3 rows with 2 columns of 6-->
+      <!-- PROJECT DETAILS -->
+
+      <div class="content-wrap">
         <div class="grid">
-          <!-- KINDNESS APP -->
-          <div class="row mb-5">
-            <div class="col-md-6 about-subheader">
-              <div class="project-text-containter">
-                <h3>Kindess</h3>
-                <div class="about-paragraph">
-                  <p>
-                    This application uses the SheCodes AI API to generate kind
-                    messages. I developed the AI context and crafted the prompt
-                    to generate thoughtful sentences based on topics entered by
-                    the user and to diplay the text in the shown format.
-                  </p>
-                </div>
-                <div class="launch">
-                  <a
-                    href="https://cheer-me.netlify.app/"
-                    class="launch-link"
-                    target="_blank"
-                    title="Link to launch the kindness app"
-                    >Launch Kindness App</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 d-none d-lg-block">
-              <div class="project-image-container">
-                <img
-                  src="/images/ai-cheer-image.png"
-                  class="img-fluid rounded img-homepage project-image"
-                  title="Image of the kindness app"
-                  alt="kindness app image"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- WEATHER APP -->
-          <div class="row mb-5">
-            <div class="col-md-6 d-none d-lg-block">
-              <div class="project-image-container">
-                <img
-                  src="/images/weather-app-image.png"
-                  class="img-fluid rounded img-homepage project-image"
-                  title="Image of the weather app"
-                  alt="Weather app image"
-                />
-              </div>
+          <!-- PROJECT GRID - nest grid, two colums with 3 nested rows in the second column-->
+          <div class="row mb-5 pt-4">
+            <!-- MAIN ROW -->
+            <div class="col-md-3 project-timeframe">
+              <h3>Early projects >>>>>>>></h3>
             </div>
 
-            <div class="col-md-6 about-subheader">
-              <div class="project-text-containter">
-                <h3>Weather</h3>
-                <div class="about-paragraph">
-                  <p>
-                    This application uses the SheCodes Weather API to call the
-                    current weather and a 5-day forecast for any location - as
-                    input by the user, including the temperatures and weather
-                    related emojis.
-                  </p>
-                </div>
-                <div class="launch">
-                  <a
-                    href="https://whatever-weather.netlify.app/"
-                    class="launch-link"
-                    target="_blank"
-                    title="Link to launch the weather app"
-                    >Launch Weather App</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="col-md-9 ps-5">
+              <!-- OPEN MAIN COL 2 WHICH HOLDS NESTED ROWS  -->
 
-          <!-- WORLD CLOCK APP -->
-          <div class="row mb-5">
-            <div class="col-md-6 about-subheader">
-              <div class="project-text-containter">
-                <h3>World Clocks</h3>
-                <div class="about-paragraph">
-                  <p>
-                    This application uses the SheCodes World Clock API to call
-                    the current time for the user's current location - or any
-                    location input by the user.
-                  </p>
-                </div>
-                <div class="launch">
-                  <a
-                    href="https://clocking-in.netlify.app/"
-                    class="launch-link"
-                    target="_blank"
-                    title="Link to launch the world clock app"
-                    >Launch World Clock App</a
-                  >
+              <div class="row mb-5 pb-5 border-bottom">
+                <!-- NESTED ROW 1  -->
+                <div class="col-md-9 about-subheader">
+                  <div class="project-text-containter ptc-left">
+                    <h3>Kindess</h3>
+                  </div>
+                  <div class="project-paragraph">
+                    <!-- OPEN PARA -->
+                    <p>
+                      This application uses the SheCodes AI API to generate kind
+                      messages. I developed the AI context and crafted the
+                      prompt to generate thoughtful sentences based on topics
+                      entered by the user and to display the text in the shown
+                      format.
+                    </p>
+                  </div>
+                  <!-- CLOSED FOR PARA -->
+                  <div class="project-image-container d-none d-lg-block">
+                    <img
+                      src="/images/ai-cheer-image.png"
+                      class="img-fluid rounded img-homepage project-image"
+                      title="Image of the kindness app"
+                      alt="kindness app image"
+                    />
+                  </div>
+                  <div class="launch">
+                    <!-- OPEN LAUNCH -->
+                    <a
+                      href="https://cheer-me.netlify.app/"
+                      class="launch-link"
+                      target="_blank"
+                      title="Link to launch the kindness app"
+                      >Launch Kindness App</a
+                    >
+                  </div>
+                  <!-- CLOSED FOR LAUNCH -->
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 d-none d-lg-block">
-              <div class="project-image-container">
-                <img
-                  src="/images/world-clock-image.png"
-                  class="img-fluid rounded img-homepage project-image"
-                  title="Image of the world clock app"
-                  alt="World clock app image"
-                />
+              <!-- CLOSED NESTED ROW 1  -->
+
+              <div class="row mb-5 pb-5 border-bottom">
+                <!-- NESTED ROW 2  -->
+                <div class="col-md-9 about-subheader">
+                  <div class="project-text-containter ptc-left">
+                    <h3>Weather</h3>
+                  </div>
+                  <div class="project-paragraph">
+                    <!-- OPEN PARA -->
+                    <p>
+                      This application uses the SheCodes Weather API to call the
+                      current weather and a 5-day forecast for any location - as
+                      input by the user, including the temperatures and weather
+                      related emojis.
+                    </p>
+                  </div>
+                  <!-- CLOSED FOR PARA -->
+                  <div class="project-image-container d-none d-lg-block">
+                    <img
+                      src="/images/weather-app-image.png"
+                      class="img-fluid rounded img-homepage project-image"
+                      title="Image of the weather app"
+                      alt="Weather app image"
+                    />
+                  </div>
+                  <div class="launch">
+                    <!-- OPEN LAUNCH -->
+                    <a
+                      href="https://whatever-weather.netlify.app/"
+                      class="launch-link"
+                      target="_blank"
+                      title="Link to launch the kindness app"
+                      >Launch Weather App</a
+                    >
+                  </div>
+                  <!-- CLOSED FOR LAUNCH -->
+                </div>
+                <!-- CLOSE FOR COL-->
               </div>
+              <!-- CLOSED NESTED ROW 2  -->
+
+              <div class="row mb-5">
+                <!-- NESTED ROW 3  -->
+                <div class="col-md-9 about-subheader">
+                  <div class="project-text-containter ptc-left">
+                    <h3>World Clocks</h3>
+                  </div>
+                  <div class="project-paragraph">
+                    <!-- OPEN PARA -->
+                    <p>
+                      This application uses the SheCodes World Clock API to call
+                      the current time for the user's current location - or any
+                      location input by the user.
+                    </p>
+                  </div>
+                  <!-- CLOSED FOR PARA -->
+                  <div class="project-image-container d-none d-lg-block">
+                    <img
+                      src="/images/world-clock-image.png"
+                      class="img-fluid rounded img-homepage project-image"
+                      title="Image of the world clock app"
+                      alt="World clock app image"
+                    />
+                  </div>
+                  <div class="launch">
+                    <!-- OPEN LAUNCH -->
+                    <a
+                      href="https://clocking-in.netlify.app/"
+                      class="launch-link"
+                      target="_blank"
+                      title="Link to launch the world clock app"
+                      >Launch World Clock App</a
+                    >
+                  </div>
+                  <!-- CLOSED FOR LAUNCH -->
+                </div>
+                <!-- CLOSE FOR COL-->
+              </div>
+              <!-- CLOSED NESTED ROW 3  -->
             </div>
           </div>
         </div>
