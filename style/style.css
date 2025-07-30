@@ -149,12 +149,33 @@ img {
 /* Formatting for smaller screens */
 
 @media (max-width: 900px) {
-  h1,
-  h3 {
+  h1 {
     font-size: 36px;
   }
-  .project-text-containter {
-    /*Placeemnt of text alongside image*/
-    margin-top: 20px;
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .hero {
+    padding: 80px 20px 20px 20px;
+    margin-bottom: 20px;
+  }
+  .content-wrap {
+    /* Footer height */
+    margin: auto 20px;
+    padding-bottom: 0px;
+  }
+  .row {
+    margin-bottom: 20px !important;
+    padding-bottom: 20px !important;
+    padding-top: 0px !important;
+  }
+  .col-md-9 {
+    padding-left: 15px !important;
+  }
+  .about-subheader {
+    padding: 0px 10px !important;
   }
 }
