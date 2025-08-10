@@ -32,80 +32,40 @@
     />
   </head>
   <body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active fw-semibold"
-                aria-current="page"
-                href="/"
-                title="link to portfolio homepage"
-                >Home</a
-              >
+    <div class="container">
+      <!-- HEADER TEXT -->
+      <div class="hero-home">
+        <h1 class="text-danger">Emma Hunter</h1>
+        <h2 class="text-primary">Learning to be a front-end developer.</h2>
+        <!-- BUTTONS -->
+        <div>
+          <ul class="buttons-home-container">
+            <li class="buttons-home">
+              <a href="/about.html"><h3>About >>>>>></h3></a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/about.html"
-                title="link to portfolio about me page"
-                >About me</a
-              >
+            <li class="buttons-home">
+              <a href="/projects.html"><h3>Projects >>></h3></a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/projects.html"
-                title="link to portfolio projects page"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/contact.html"
-                title="link to portfolio contact page"
-                >Contact</a
+            <li class="buttons-home">
+              <a href="mailto:emma.hunter.code@gmail.com"
+                ><h3>Contact >>>></h3></a
               >
             </li>
           </ul>
         </div>
+        <!-- FOOTER WITH SIGNATURE -->
+        <footer class="signature">
+          <p>
+            This project was coded by me! It's
+            <a
+              href="https://github.com/emma-hunter-code/portfolio-website"
+              target="_blank"
+              >open-source on GitHub</a
+            >
+            and hosted on Netlify.
+          </p>
+        </footer>
       </div>
-    </nav>
-    <div class="page-container">
-      <!-- HEADER TEXT -->
-      <div class="hero">
-        <h1 class="text-danger">Emma Hunter</h1>
-        <h2 class="text-primary">Learning to be a front-end developer.</h2>
-      </div>
-      <div class="content-wrap"></div>
-
-      <!-- FOOTER WITH SIGNATURE -->
-      <footer class="signature sticky-bottom">
-        <p>
-          This project was coded by me! It's
-          <a
-            href="https://github.com/emma-hunter-code/portfolio-website"
-            target="_blank"
-            >open-source on GitHub</a
-          >
-          and hosted on Netlify.
-        </p>
-      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

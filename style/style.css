@@ -1,32 +1,60 @@
 :root {
   --header-font-family: "Playfair Display", serif;
   --subheader-font-family: "Poppins", sans-serif;
-  --body-text-color: color black;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --primary-color: #dc3444; /* header color */
+  --secondary-color: #0c6dfd; /* subheader and link color */
+  --tertiary-color: #fef8ea; /* hero/box/home color */
 }
 
-.page-container {
-  /* Trying to figure out footer but it's not working! */
-  position: relative;
-  min-height: 90vh;
+.container {
+  /* Removes margin on bootstrap container styling */
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
 }
 
 .content-wrap {
-  /* Footer height */
+  /* Adds margin to the content sections */
   margin: auto 80px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 .hero {
-  background-color: rgba(250, 221, 152, 0.2);
+  /* Formats the header section on About and Projects */
+  background-color: var(--tertiary-color);
   padding: 100px 40px 60px 40px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+.contact-box {
+  /* Formats the contact section on About and Projects */
+  background-color: rgba(250, 221, 152, 0.2);
+  padding: 40px;
+  justify-content: center;
+}
+
+.btn {
+  /* Formats the contact button on About and Projects */
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  text-decoration: none;
 }
 
 /* Font families */
 
 h1,
-h3 {
+h3,
+h4 {
   font-family: var(--header-font-family);
 }
 
@@ -38,6 +66,7 @@ p {
 /* Font formatting */
 
 h1 {
+  /* Headers on About and Projects */
   font-optical-sizing: auto;
   font-size: 72px;
   font-weight: bold;
@@ -46,25 +75,102 @@ h1 {
   margin-bottom: 10px;
 }
 
+.hero-home h2 {
+  /* Subheader on Home */
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
 h2 {
+  /* Subheaders on Home, About and Projects */
   font-weight: 100;
   font-style: normal;
 }
 
 h3 {
-  font-family: var(--header-font-family);
+  /* Button text on Home, sub-subheaders on About and Projects */
   font-weight: bold;
   font-style: normal;
   font-size: 28px;
 }
 
+h4 {
+  /* Text in contact box on About and Projects */
+  font-weight: bold;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn h4 {
+  /* Text in button on contact box on About and Projects */
+  font-size: 20px;
+}
+
 p {
+  /* Formats paragraphs on About and Projects */
   opacity: 0.7;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 0px;
+}
+
+a {
+  /* Formats links on About and Projects (links on Home has different styling)*/
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*HOMEPAGE*/
+
+.hero-home {
+  /* Formats hero differently on Home as the color floods the page*/
+  background-color: var(--tertiary-color);
+  padding: 100px 40px 60px 40px;
+  height: 100%;
+  text-align: center;
+}
+
+.buttons-home-container {
+  /* Places buttons on homepage */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 30px; /* Adds space between buttons and headers */
+}
+
+.buttons-home a {
+  /* Formats link text to black - not blue */
+  color: black;
+}
+
+.buttons-home {
+  /* Creates space and formatting for each button */
+  padding: 10px 80px;
+  margin: 3px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.buttons-home:hover {
+  /* Hover formatting for buttons */
+  background-color: black;
+}
+
+.buttons-home:hover a {
+  /* Hover formatting for button text */
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /*ABOUT ME PAGE*/
 
@@ -77,6 +183,7 @@ p {
 }
 
 .project-image {
+  /* Formatting of project images */
   box-shadow: var(--box-shadow);
   padding: 5px !important;
   max-width: 500px;
@@ -84,44 +191,24 @@ p {
 }
 
 .launch {
-  font-weight: normal;
-}
-
-/*Contact details on contacts page*/
-
-.contact-me {
-  /*This is the email address*/
-  padding-top: 5px;
+  /* Formatting of launch text */
   font-weight: bold;
 }
 
-a {
-  text-decoration: none;
-}
+/* Formatting for footer and signature */
 
-a:hover {
-  /*This is to highlight when the email address is hovered on*/
-  text-decoration: underline;
-}
-
-/* Formatting for signature */
-
-.signature {
-  /* Trying to figure out footer placement but it's not working! */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  padding-top: 20px;
-  padding-right: 20px;
+footer {
+  /* Placement of signature */
+  text-align: center;
 }
 
 .signature p {
+  /* Formatting signature text */
   font-size: 12px;
-  color: var(--body-text-color);
+  color: black;
   opacity: 0.6;
   font-family: monospace;
-  text-align: right;
+  margin: 20px;
 }
 
 /* Formatting for smaller screens */
