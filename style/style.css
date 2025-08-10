@@ -142,6 +142,7 @@ a:hover {
   justify-content: center;
   list-style: none;
   margin-top: 30px; /* Adds space between buttons and headers */
+  margin-bottom: 60px; /* Adds space between buttons and footer */
 }
 
 .buttons-home a {
@@ -175,6 +176,7 @@ a:hover {
 /*ABOUT ME PAGE*/
 
 .about-photo {
+  /* Formatting inages on About me page*/
   max-width: 80%;
   border-radius: 4px;
   box-shadow: var(--box-shadow);
