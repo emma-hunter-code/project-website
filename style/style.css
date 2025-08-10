@@ -152,7 +152,7 @@ a:hover {
 .buttons-home {
   /* Creates space and formatting for each button */
   padding: 10px 80px;
-  margin: 3px;
+  margin: 10px;
   border-radius: 3px;
   background-color: white;
   color: black;
