@@ -228,7 +228,6 @@ footer {
     margin-bottom: 20px;
   }
   .content-wrap {
-    /* Footer height */
     margin: auto 20px;
     padding-bottom: 0px;
   }
@@ -239,5 +238,20 @@ footer {
   }
   .col-md-9 {
     padding-left: 15px !important;
+  }
+  .hero-home {
+    padding: 60px 20px 20px 20px;
+  }
+  .hero-home h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .buttons-home-container {
+    display: block;
+    margin-top: 10px; /* Adds space between buttons and headers */
+    padding: 0px;
+  }
+  .buttons-home {
+    margin: 20px;
   }
 }
