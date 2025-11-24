@@ -77,8 +77,8 @@ h1 {
 
 .hero-home h2 {
   /* Subheader on Home */
-  font-size: 60px;
-  margin-bottom: 60px;
+  font-size: 54px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -88,10 +88,10 @@ h2 {
 }
 
 h3 {
-  /* Button text on Home, sub-subheaders on About and Projects */
+  /* Sub-subheaders on About and Projects */
   font-weight: bold;
   font-style: normal;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 h4 {
@@ -114,6 +114,17 @@ p {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 0px;
+}
+
+.home-para {
+  /* Formats paragraph on Home */
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.project-title {
+  /* Formats sub-header on Home */
+  font-weight: 500;
 }
 
 a {
