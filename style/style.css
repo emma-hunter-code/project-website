@@ -75,6 +75,11 @@ h1 {
   margin-bottom: 10px;
 }
 
+.h1-home {
+  font-size: 130px;
+  padding-top: 60px;
+}
+
 .hero-home h2 {
   /* Subheader on Home */
   font-size: 54px;
