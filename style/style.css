@@ -152,43 +152,6 @@ a:hover {
   text-align: center;
 }
 
-.buttons-home-container {
-  /* Places buttons on homepage */
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 30px; /* Adds space between buttons and headers */
-  margin-bottom: 60px; /* Adds space between buttons and footer */
-}
-
-.buttons-home a {
-  /* Formats link text to black - not blue */
-  color: black;
-}
-
-.buttons-home {
-  /* Creates space and formatting for each button */
-  padding: 60px 60px;
-  margin: 10px;
-  border-radius: 3px;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
-
-.buttons-home:hover {
-  /* Hover formatting for buttons */
-  background-color: black;
-}
-
-.buttons-home:hover a {
-  /* Hover formatting for button text */
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /*ABOUT ME PAGE*/
 
 .about-photo {
@@ -225,6 +188,17 @@ a:hover {
 footer {
   /* Placement of signature */
   text-align: center;
+}
+
+.logo {
+  padding: 10px;
+  margin-top: -10px;
+  font-size: 30px;
+  color: black;
+}
+
+.logo-link:hover {
+  text-decoration: none;
 }
 
 .signature p {
