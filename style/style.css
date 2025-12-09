@@ -8,29 +8,208 @@
 }
 
 .container {
-  /* Removes margin on bootstrap container styling */
+  /* Wraps all content minus navbar - removes margin on bootstrap container styling KEEP */
   margin: 0px;
   padding: 0px;
   max-width: 100%;
 }
 
-.content-wrap {
-  /* Adds margin to the content sections */
-  margin: auto 80px;
-  padding-bottom: 40px;
+/* FONT FAMILIES */
+
+h1,
+h3,
+h4 {
+  font-family: var(--header-font-family);
 }
 
+h2,
+p {
+  font-family: var(--subheader-font-family);
+}
+
+/* FONT FORMATTING */
+
+.h1-home {
+  /* Homepage header (name) KEEP */
+  font-size: 130px;
+  padding-top: 60px;
+}
+
+.h2-home {
+  /* Homepage subheader KEEP */
+  font-size: 54px;
+}
+
+h1 {
+  /* Headers on Sections KEEP */
+  font-optical-sizing: auto;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+h2 {
+  /* Subheaders on Sections KEEP */
+  font-size: 30px;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h3 {
+  /* Sub-subheaders on Section KEEP */
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+h4 {
+  /* Text in Contact Section KEEP */
+  font-weight: bold;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn h4 {
+  /* Text in button on Contact Section KEEP */
+  font-size: 20px;
+}
+
+p {
+  /* Formats paragraphs in Sections KEEP */
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.project-title {
+  /* Formats sub-header on Project Section KEEP */
+  font-weight: 500;
+}
+
+a {
+  /* Formats links on About and Projects Sections (logo links in footer have different styling) KEEP */
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*NAVBAR ACTIVE*/
+
+.nav-link.active {
+  font-weight: 700; /* bold */
+  color: #000 !important; /* optional: keep the text visible */
+}
+
+/*HOMEPAGE*/
+
+.hero-home {
+  /* Formats top header (name) KEEP*/
+  background-color: white;
+  padding: 30px 30px 20px 30px;
+  text-align: center;
+}
+
+/*ALL SECTIONS*/
+
 .hero {
-  /* Formats the header section on About and Projects */
+  /* Formats the header for sections KEEP */
+  padding: 30px;
+}
+
+.content-wrap {
+  /* Adds margin to the grids in Sections KEEP */
+  margin: auto 80px;
+}
+
+/*ABOUT ME SECTION*/
+
+.about-me-section {
   background-color: var(--tertiary-color);
-  padding: 100px 40px 60px 40px;
+  margin: 20px 300px;
+  border-radius: 4px;
+}
+
+/*ME/CAT IMAGES*/
+
+.images {
+  display: flex;
+}
+
+img {
+  /* Formatting images on About Me Section KEEP*/
+  max-width: 25%;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+/*PROJECTS SECTION*/
+
+.projects-section {
+  background-color: var(--tertiary-color);
+  margin: 20px 300px;
+  border-radius: 4px;
+}
+
+.ptc-left {
+  /*Placeemnt of project details on left side KEEP*/
+  text-align: start;
+  margin: 0;
+}
+
+.project-image-container {
+  align-items: center;
+}
+
+.project-image {
+  /* Formatting of project images KEEP */
+  box-shadow: var(--box-shadow);
+  max-width: 45%;
+  display: block;
+  margin: 20px auto;
+}
+
+.launch {
+  /* Formatting of launch text KEEP */
+  font-weight: bold;
+  text-align: center;
+}
+
+.git {
+  /* Formatting of git text KEEP */
+  text-align: center;
   margin-bottom: 30px;
+}
+
+/* RESUME SECTION */
+
+.resume-section {
+  background-color: white;
+  padding-bottom: 50px;
+  margin: 20px 300px;
+  border-radius: 4px;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  background-color: var(--tertiary-color);
+  margin: 20px 300px;
+  border-radius: 4px;
 }
 
 .contact-box {
   /* Formats the contact section on About and Projects */
-  background-color: rgba(250, 221, 152, 0.2);
   padding: 40px;
+  margin-top: 40px;
   justify-content: center;
 }
 
@@ -50,164 +229,34 @@
   text-decoration: none;
 }
 
-/* Font families */
+/* FOOTER/SIGNATURE SECTION */
 
-h1,
-h3,
-h4 {
-  font-family: var(--header-font-family);
+footer {
+  /* Placement of signature KEEP*/
+  text-align: center;
 }
 
-h2,
-p {
-  font-family: var(--subheader-font-family);
-}
-
-/* Font formatting */
-
-h1 {
-  /* Headers on About and Projects */
-  font-optical-sizing: auto;
-  font-size: 72px;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.h1-home {
-  font-size: 130px;
-  padding-top: 60px;
-}
-
-.hero-home h2 {
-  /* Subheader on Home */
-  font-size: 54px;
+.signature p {
+  /* Formatting signature text KEEP */
+  font-size: 12px;
+  color: black;
+  opacity: 0.6;
+  font-family: monospace;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
-h2 {
-  /* Subheaders on Home, About and Projects */
-  font-weight: 100;
-  font-style: normal;
-}
-
-h3 {
-  /* Sub-subheaders on About and Projects */
-  font-weight: bold;
-  font-style: normal;
-  font-size: 20px;
-}
-
-h4 {
-  /* Text in contact box on About and Projects */
-  font-weight: bold;
-  font-style: normal;
-  font-size: 28px;
-  margin: 0px;
-  padding: 0px;
-}
-
-.btn h4 {
-  /* Text in button on contact box on About and Projects */
-  font-size: 20px;
-}
-
-p {
-  /* Formats paragraphs on About and Projects */
-  opacity: 0.7;
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 0px;
-}
-
-.home-para {
-  /* Formats paragraph on Home */
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
-.project-title {
-  /* Formats sub-header on Home */
-  font-weight: 500;
-}
-
-a {
-  /* Formats links on About and Projects (links on Home has different styling)*/
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/*HOMEPAGE*/
-
-.hero-home {
-  /* Formats hero differently on Home as the color floods the page*/
-  background-color: var(--tertiary-color);
-  padding: 100px 40px 60px 40px;
-  height: 100%;
-  text-align: center;
-}
-
-/*ABOUT ME PAGE*/
-
-.about-photo {
-  /* Formatting inages on About me page*/
-  max-width: 80%;
-  border-radius: 4px;
-  box-shadow: var(--box-shadow);
-  margin: 10px;
-}
-
-/*PROJECTS PAGE*/
-
-.ptc-left {
-  /*Placeemnt of project details on left side*/
-  text-align: start;
-  margin: 0;
-}
-
-.project-image {
-  /* Formatting of project images */
-  box-shadow: var(--box-shadow);
-  padding: 5px !important;
-  max-width: 500px;
-  margin-bottom: 20px !important;
-}
-
-.launch {
-  /* Formatting of launch text */
-  font-weight: bold;
-}
-
-/* Formatting for footer and signature */
-
-footer {
-  /* Placement of signature */
-  text-align: center;
-}
-
 .logo {
+  /* Formatting LinkedIn and Git logo KEEP */
   padding: 10px;
   margin-top: -10px;
+  margin-bottom: 40px;
   font-size: 30px;
   color: black;
 }
 
 .logo-link:hover {
   text-decoration: none;
-}
-
-.signature p {
-  /* Formatting signature text */
-  font-size: 12px;
-  color: black;
-  opacity: 0.6;
-  font-family: monospace;
-  margin: 20px;
 }
 
 /* Formatting for smaller screens */
@@ -233,27 +282,12 @@ footer {
     margin: auto 20px;
     padding-bottom: 0px;
   }
-  .row {
-    margin-bottom: 20px !important;
-    padding-bottom: 20px !important;
-    padding-top: 0px !important;
-  }
-  .col-md-9 {
-    padding-left: 15px !important;
-  }
+
   .hero-home {
     padding: 60px 20px 20px 20px;
   }
   .hero-home h2 {
     font-size: 36px;
     margin-bottom: 10px;
-  }
-  .buttons-home-container {
-    display: block;
-    margin-top: 10px; /* Adds space between buttons and headers */
-    padding: 0px;
-  }
-  .buttons-home {
-    margin: 20px;
   }
 }
