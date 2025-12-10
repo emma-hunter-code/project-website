@@ -279,9 +279,15 @@ footer {
   .about-me-section {
     margin: 10px;
   }
+  img {
+    max-width: 65%;
+  }
   .projects-section {
     margin: 10px;
     margin-bottom: 0;
+  }
+  .project-image {
+    max-width: 65%;
   }
   .git {
     margin-bottom: 20px;
